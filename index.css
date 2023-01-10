@@ -1,0 +1,68 @@
+#welcome-banner{
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	background-image: url("./img/welcome-background2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#welcome-image {
+	width: 50%;
+	float: left;
+	height: 100%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#welcome-image > img {
+	position: relative;
+	height: 70%;
+}
+
+#welcome-text {
+	width: 50%;
+	float : right;
+	height: 100%;
+	padding: 50px 50px 50px 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+#welcome-text > .flex-item{
+	flex: auto;
+}
+
+#welcome-text > img{
+	height: 20%;
+}
+
+#welcome-text > button{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+#professor{
+	height: 80vh;
+}
+
+#professor-img {
+	width: 50%;
+	float: left;
+}
+
+#professor-img > img {
+	float: right;
+	height: 70vh;
+}
+
+#course-description{
+	width: 50%;
+	float: right;
+}
+
+p {
+	width: 25vw;
+}
