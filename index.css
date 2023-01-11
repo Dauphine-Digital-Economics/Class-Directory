@@ -46,6 +46,7 @@
 
 #professor{
 	height: 80vh;
+	margin-top: 50px;
 }
 
 #professor-img {
@@ -56,13 +57,30 @@
 #professor-img > img {
 	float: right;
 	height: 70vh;
+	margin-right: 40px;
 }
 
 #course-description{
 	width: 50%;
 	float: right;
+	margin-top: 100px;
+}
+
+#course-description > div {
+	width: 100%;
+	
 }
 
 p {
 	width: 25vw;
+}
+
+.class {
+	width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+#rowid > div{
+	width: 33%;
 }
