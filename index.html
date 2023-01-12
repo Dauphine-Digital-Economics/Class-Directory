@@ -9,7 +9,8 @@
 		<!-- Include css stylesheet -->
 		<link rel="stylesheet" href="./index.css">
 		<!-- Include web3js -->
-		<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
 		<!-- Use the head section for metadata, linking css/js -->
 	</head>
 	<body>
@@ -21,7 +22,7 @@
 				<h1 class="flex-item" style="color:gainsboro;">Welcome to Dauphine Solidity and Smart Contract Development 2023!</h1>
 				<img class="flex-item" src="./img/MetaMask_Fox.svg">	
 				<div class="flex-item" style="padding-left:50px; padding-right:50px">
-					<button class="btn btn-success btn-lg btn-block">Check Metamask Balance</button>
+					<button class="btn btn-success btn-lg btn-block" id="balanceBtn">Check Metamask Balance</button>
 				</div>	
 			</div>
 		</div>
