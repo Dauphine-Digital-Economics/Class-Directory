@@ -1,32 +1,25 @@
 window.onload = function(){
-	document.getElementById("balanceBtn").onclick = function(){
+	document.getElementById("balanceBtn").onclick = async() => {
 		if (typeof web3 !== 'undefined') {
 		    console.log('web3 is enabled')
+		    const web3 = await logIntoMetaMask();
 
-		    // Instantiate a web3 object
-		    var web3 = new Web3(window.ethereum);
-
-		    if (web3.currentProvider.isMetaMask === true) {
-		      console.log('MetaMask is active')
-		      	try{
-		      		console.log("enter try statement")
-		      		await window.ethereum.enable();
-		      		return true;
-		      	} catch (e) {
-		      		console.log("error checking if metamask is logged in")
-		      		alert(e);
-		      		return false;
-		      	}
-		      	console.log("get accounts")
-		      	const accounts = await web3.eth.getAccounts().then(console.log(accounts.length));
-		    	
-		    } else {
-		    	// Popup to ask user to install metamask
-		    	alert("Please install Metamask on your current browser");
-		    }
-		} else {
-			// No web3 instance
-			alert("Please install Metamask or connect a web3 Provider");
+		} else{
+			alert("Install MetaMask or connect a provider");
 		}
+
 	};
+
+	function logIntoMetaMask(){
+		return Promise(async (resolve, reject)=> {
+			var web3 = new Web3(window.ethereum);	
+			try{
+			    await window.ethereum.request({method : "eth_accounts"});
+			    resolve(web3);
+			} catch (e) {
+				console.log(e);
+			    reject(error);
+			}
+		})
+	}
 };
