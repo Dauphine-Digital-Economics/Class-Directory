@@ -11,7 +11,7 @@ window.onload = function(){
 	};
 
 	function logIntoMetaMask(){
-		return Promise(async (resolve, reject)=> {
+		return new Promise(async (resolve, reject)=> {
 			var web3 = new Web3(window.ethereum);	
 			try{
 			    await window.ethereum.request({method : "eth_accounts"});
