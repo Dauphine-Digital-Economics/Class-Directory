@@ -6,14 +6,18 @@ window.onload = function(){
 			const currentAccount = accounts[0];
 			await ethereum.request({method: 'eth_getBalance', params: [currentAccount, 'latest']}).then(
 				(balance) => {
-					alert("Success! Your current Balance is" + balance);
+					const decBalance = HexToWei(balance);
+					alert("Success! Your current Balance is " + decBalance + " Wei");
 				}).catch(() => {
 					alert("getBalance RPC call failed");
 				});
-			console.log(balance);
 		} else{
 			alert("Install MetaMask or connect a provider");
 		}
 
 	};
+
+	function HexToWei(hexBalance){
+		return parseInt(hexBalance, 16);
+	}
 };
