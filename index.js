@@ -19,3 +19,11 @@ window.onload = function(){
 		return parseInt(hexBalance, 16);
 	}
 };
+
+	document.getElementById("kitties").onclick = function() {
+		let kitties = document.querySelectorAll(".kitty");
+		for (let kitty of kitties) {
+			kitty.style.transition = "all 3s";
+			kitty.style.transform = "translateX(100%)";
+		}
+};
