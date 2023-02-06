@@ -44,6 +44,27 @@
 	padding-right: 50px;
 }
 
+@media only screen and (max-width: 768px) {
+  #welcome-text {
+    width: 100%;
+	height:50%;
+	text-align: center;
+
+  }
+  #welcome-image {
+    width: 100%;
+	height:50%;
+  }
+
+  #welcome-banner {
+	display: flex;
+	flex-direction: column;
+	height: 200vh;
+
+  }
+
+}
+
 #professor{
 	height: 80vh;
 	margin-top: 50px;
@@ -114,13 +135,17 @@ p {
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: white;
 }
+
 
 .flip-card-back {
   background-color: #5902E6;
   color: white;
+  display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
   transform: rotateY(180deg);
 
 }
@@ -138,4 +163,14 @@ p {
 	transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
 	background: #fff;
 	color: #222222;
+}
+
+#LinkedinBtn {
+	background-color: #0077B5;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
 }

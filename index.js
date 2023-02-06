@@ -20,6 +20,13 @@ window.onload = function(){
 	}
 
 	document.getElementById("valentinBtn").onclick = NewTab;
+
+	document.getElementById("LinkedinBtn").addEventListener("click", function() {
+		var confirmed = window.confirm("You are about to discover a truly exceptional person, are you really ready for that? ");
+		if (confirmed) {
+		  window.open("https://www.linkedin.com/in/c%C3%A9dric-lion-8ba252206/");
+		}
+	});
 };
 
 function leaFunction() {
