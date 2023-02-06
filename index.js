@@ -19,3 +19,7 @@ window.onload = function(){
 		return parseInt(hexBalance, 16);
 	}
 };
+
+function leaFunction() {
+    document.getElementById("more").innerHTML = "I did a double degree at the University of Paris Nanterre and my Master 1 in quantitative economics at Dauphine. I would like to work in Data Science Consulting field";
+}
