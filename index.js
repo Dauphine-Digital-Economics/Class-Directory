@@ -27,6 +27,10 @@ window.onload = function(){
 		  window.open("https://www.linkedin.com/in/c%C3%A9dric-lion-8ba252206/");
 		}
 	});
+
+	document.getElementById("button").onclick = async() => {
+	window.open("https://dauphine.psl.eu/")
+	}
 };
 
 function leaFunction() {
