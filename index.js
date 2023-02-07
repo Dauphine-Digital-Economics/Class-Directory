@@ -29,8 +29,21 @@ window.onload = function(){
 	});
 
 	document.getElementById("button").onclick = async() => {
-	window.open("https://dauphine.psl.eu/")
-	}
+		window.open("https://dauphine.psl.eu/")
+	};
+
+	document.querySelector(".mySuperButton").addEventListener('click', event => {
+		document.location.href = "https://www.linkedin.com/in/margot-monge-947721197";
+	})
+
+	document.getElementById("kitties").onclick = function() {
+		let kitties = document.querySelectorAll(".kitty");
+		for (let kitty of kitties) {
+			kitty.style.visibility = "visible";
+			kitty.style.transition = "all 3s";
+			kitty.style.transform = "translateX(100%)";
+		}
+	};
 };
 
 function leaFunction() {
