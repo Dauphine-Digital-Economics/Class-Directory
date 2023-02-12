@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Play Game with guesses</title>
+    <link rel="stylesheet" type="text/css" href="play.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.2.9/dist/web3.min.js"></script>
+
+  </head>
+  <body>
+    <button id="playButton">Play</button>
+    <script>
+      document.getElementById("playButton").addEventListener("click", function() {
+        // Asking the user to input the guess
+        var userGuess = prompt("Enter your guess:");
+
+        // Connecting to the smart contract through web3
+        // Get a reference to the Web3 object
+        var Web3 = window.Web3;
+
+        // Initializing a new Web3 object, and specifying the desired network
+        if (typeof window.ethereum !== 'undefined' || (typeof window.web3 !== 'undefined')) {
+        // Use the injected provider from MetaMask
+        var web3 = new Web3(Web3.currentProvider);
+        } else {
+        // If MetaMask is not available, use a fallback provider
+        var web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
+        }
+
+        // Putting the address of the game contract already deployed
+        var contractAddress = "0xe6317492C8a532992019394FE3C827C564169Fe5";
+
+        // Get the ABI (Application Binary Interface) of the contract
+        var abi = [
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "number_1",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "number_2",
+                "type": "uint256"
+              }
+            ],
+            "name": "bitwiseAnd",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "pure",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "userGuess",
+                "type": "uint256"
+              }
+            ],
+            "name": "play",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ];
+        // Create a contract object
+        var contract = new web3.eth.Contract(abi, contractAddress);
+        // Call the play function
+        contract.methods.play(userGuess).call().then(function(bool) {
+          if (bool) {
+            alert("Correct guess!");
+          } else {
+            alert("Wrong guess!");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

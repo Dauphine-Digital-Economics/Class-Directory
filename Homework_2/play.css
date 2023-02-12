@@ -1,0 +1,21 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+
+#playButton {
+    padding: 10px 20px;
+    width: 100px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
