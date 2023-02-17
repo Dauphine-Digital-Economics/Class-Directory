@@ -44,6 +44,12 @@ window.onload = function(){
 			kitty.style.transform = "translateX(100%)";
 		}
 	};
+
+	function NewTabLaeti(){
+    	window.open("https://www.linkedin.com/in/laetitia-assor-15ab28192/");
+    }
+	 
+    document.getElementById("laetiBtn").onclick = NewTabLaeti;
 };
 
 function leaFunction() {
