@@ -1,4 +1,5 @@
-# Hardhat Project
+# Hardhat Project deploying from scratch 
+You will find out more on the separate branch Homework_4
 
 ```shell
 npx hardhat node
