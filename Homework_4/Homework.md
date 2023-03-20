@@ -143,6 +143,50 @@ The .env file is ignored as expected.
 
 **The link to the alfajores deployment is here: https://github.com/aizhan-zhak/Hardhat-Gambling.git**
 
+Following several requests for some CELO testnet funds, I've got 5.1 CELO on my MetaMask. 
+Right after the deployment, I left with 5.0941 CELO, which I found to be the gas price that I have paid for the transaction associated with the contract creation. 
+  
+``` shell
+ node receipt.js
+```
+The receipt.js was pushed and can be found with the following git commit -m "Receipt and gas for alfajores deployment".
+```
+{
+  to: null,
+  from: '0x79f6B6063f9Abf7B6fFCb6FAC48496AF07764bb1',
+  contractAddress: '0xe6317492C8a532992019394FE3C827C564169Fe5',
+  transactionIndex: 1,
+  gasUsed: BigNumber { _hex: '0x039c26', _isBigNumber: true },
+  blockHash: '0x24f7e646b1f49624e09b53073dd2caf98949ba3bb64bfcbddaee4023135ce063',
+  transactionHash: '0x75f8a6f7e78b1d35c975bedeb014b8529d443d777a8a08ae346f3288298870dc',
+  blockNumber: 16787230,
+  confirmations: 1356,
+  cumulativeGasUsed: BigNumber { _hex: '0x056111', _isBigNumber: true },
+  effectiveGasPrice: BigNumber { _hex: '0x05d21dba00', _isBigNumber: true },
+  status: 1,
+  type: 0,
+  byzantium: true
+}
+Gas used: 236582
+Gas price: 25000000000
+Transaction cost: 0.00591455 CELO
+```
+External validity of the transaction attributes can be found here 
+  https://explorer.bitquery.io/celo_alfajores/tx/0x75f8a6f7e78b1d35c975bedeb014b8529d443d777a8a08ae346f3288298870dc
+_**Transaction Attributes**_
+Attribute	Value
+Block	16787230
+Timestamp	2023-03-20 09:37:39
+Sender	0x79f6b6063f9abf7b6ffcb6fac48496af07764bb1
+Receiver	0x
+Created	0xe6317492c8a532992019394fe3c827c564169fe5
+Amount	0 cGLD 
+**Gas Cost	0.005914550071197696 cGLD **
+  Avg. Gas Price, GWei	2.4999999488000002e-8 GWei
+Gas Used	236582
+Success?	true
+```
+  
 # II. Impact Market DAO proposal
 
 ## Title: Creating a PACT Reward System to Encourage Donations
