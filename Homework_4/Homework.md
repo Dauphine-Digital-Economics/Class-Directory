@@ -175,7 +175,7 @@ Transaction cost: 0.00591455 CELO
 External validity of the transaction attributes can be found here 
   https://explorer.bitquery.io/celo_alfajores/tx/0x75f8a6f7e78b1d35c975bedeb014b8529d443d777a8a08ae346f3288298870dc
  ```
-_**Transaction Attributes**_
+Transaction Attributes
 Attribute	Value
 Block	16787230
 Timestamp	2023-03-20 09:37:39
@@ -183,11 +183,14 @@ Sender	0x79f6b6063f9abf7b6ffcb6fac48496af07764bb1
 Receiver	0x
 Created	0xe6317492c8a532992019394fe3c827c564169fe5
 Amount	0 cGLD 
-**Gas Cost	0.005914550071197696 cGLD **
+Gas Cost	0.005914550071197696 cGLD
   Avg. Gas Price, GWei	2.4999999488000002e-8 GWei
 Gas Used	236582
 Success?	true
 ```
+**Comments:** The cost of the transaction, which is 0.00591455 CELO, was calculated based on the amount of gas used, which was 236582, and the gas price, which was 25000000000. Gas is the fee that users pay to execute transactions on the blockchain network. It is used to compensate miners who validate and process the transaction. The amount of gas used is a measure of the computational resources required to execute the transaction. The gas price represents the amount of CELO paid per unit of gas used. The product of these two values determines the total cost of the transaction. Therefore, a higher gas price or a larger amount of gas used will result in a higher transaction cost.The gas mechanism serves as an important security feature on the blockchain network, preventing malicious actors from spamming the network with unnecessary transactions. Additionally, it ensures that resources are allocated efficiently, preventing the network from becoming overloaded and slowing down transaction processing times.
+  
+It is possible to evaluate the efficiency of the transaction in terms of gas usage. In my case, the transaction used a total of 236582 gas at a gas price of 25000000000 wei per gas unit, resulting in a transaction cost of 0.00591455 CELO. To determine whether this transaction was efficient or not, I need to compare it with similar transactions on the same network with my classmates. I compared with one of my classmates, who had a gas fee associated to the deployment for 0.0002 CELO less than what I paid as cost. If others' transactions for similar functions on the same network require significantly less gas, then this transaction might be considered inefficient.
   
 # II. Impact Market DAO proposal
 
