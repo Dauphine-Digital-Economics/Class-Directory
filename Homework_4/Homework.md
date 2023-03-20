@@ -215,18 +215,17 @@ Donors play a crucial role in supporting impactMarket's mission. Through their c
 #### Mechanism:
 To incentivize donors to increase their donations and use their PACT tokens, the following mechanisms are proposed:
 
-1. Matching program. The donation matching program will match a portion of the donation made by the donor with PACT tokens. The exact matching rate will be determined by the DAO and can be adjusted periodically based on the availability of funds and the impact of the program. For example, if the matching rate is set at 50%, a donor who contributes 100 PACT will receive an additional 50 PACT as a reward.
+***1. Matching program.*** The donation matching program will match a portion of the donation made by the donor with PACT tokens. The exact matching rate will be determined by the DAO and can be adjusted periodically based on the availability of funds and the impact of the program. For example, if the matching rate is set at 50%, a donor who contributes 100 PACT will receive an additional 50 PACT as a reward.
 
-2. Reward system, which will be a system with increasing rewards and benefits for higher levels of engagement.
+***2. Reward system***, which will be a system with increasing rewards and benefits for higher levels of engagement.
   The proposed reward system will be structured as follows:
+  
   - **Donations:** Donors who contribute a certain amount of funds to impactMarket will be rewarded with a set number of PACT tokens. The more they donate, the more tokens they will receive. This will incentivize donors to increase their contributions and also increase the amount of PACT tokens in circulation.
   - **Participation:** PACT token holders who actively participate in impactMarket's DAO will also be eligible for rewards. This can include activities such as voting on proposals, contributing to discussions, and volunteering time to help with impactMarket projects. The more active a PACT holder is within the DAO, the more rewards they will receive.
   - **Top leaders in the Leaders Board:** The board will track the impact of each donor's contributions. By showing donors how their donations are making a difference, it can also create a sense of competition and motivation that encourages them to contribute more.
   - **Referrals:** PACT holders who refer new donors to impactMarket will also be eligible for rewards. This will encourage PACT holders to spread the word about impactMarket's mission and increase the platform's reach.
   - **PACT Token Burn:** This could be a mechanism where donors can burn their PACT tokens to support social impact projects directly. By allowing donors to contribute their PACT tokens in this way, it can create a sense of ownership and engagement that encourages them to contribute more.
   - **UBI Community Engagement:** This will create opportunities for donors to engage directly with UBI communities and see the impact of their donations first-hand. By creating a sense of connection (could be considered rewarding) and empathy, it can motivate donors to increase their contributions and use their PACT tokens in a way that supports the needs of these communities.
-
-   a rewards program that provides donors with incentives for increasing their donations. For example, donors who contribute a certain amount of PACT tokens could receive exclusive impactMarket merchandise, access to VIP events, or other benefits.
 
 ####  Benefits:
 The donation matching program will benefit both impactMarket and its PACT donors. For impactMarket, the program will increase the funding available to support its initiatives, while also creating a sense of community and engagement among its members. For PACT donors, the program provides an opportunity to earn more PACT while supporting a cause they believe in.
