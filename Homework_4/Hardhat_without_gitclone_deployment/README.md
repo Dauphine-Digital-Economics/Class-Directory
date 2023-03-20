@@ -1,20 +1,15 @@
-# Hardhat Project deploying from scratch 
-You will find out more on the separate branch Homework_4
+# I. Hardhat Deployments 
+
+## Hardhat Project deploying from scratch 
+
+***You will find out the full project on the <u> separate branch Homework_4 <u> within the forked Dauphine-Digital-Economics.***
+Note: I could manage to push it only to the separate branch, which I named the same as the current folder (Homework_4/Hardhat_without_gitclone_deployment)
 
 ```shell
 npx hardhat node
 npx hardhat run scripts/deploy.js
 ```
-#eth_chainId
-#eth_getTransactionByHash
-#eth_accounts (2)
-#eth_chainId
-#eth_blockNumber
-#eth_chainId (2)
-#eth_estimateGas
-#eth_getBlockByNumber
-#eth_feeHistory
-#eth_sendTransaction
+
   Contract deployment: Engine
   Contract address:    0xdc64a140aa3e981100a9beca4e685f962f0cf6c9
   Transaction:         0x7f43e5f81aa79bb41001896c6415f9783e158ffd13586c1a66b9a5a118fee2c9
@@ -22,14 +17,7 @@ npx hardhat run scripts/deploy.js
   Value:               0 ETH
   Gas used:            86477 of 86477
   Block #5:            0x1c3e3fe306297028bdc0981a110619679f73db803049d90e932c78565509bb8a
-
-#eth_chainId
-#eth_getTransactionByHash
-#eth_accounts
-#eth_chainId
-#eth_estimateGas
-#eth_feeHistory
-#eth_sendTransaction
+  
   Contract deployment: Game
   Contract address:    0x5fc8d32690cc91d4c39d9d3abcbd16989f875707
   Transaction:         0xd924a1ba89bb72b6d4fde728953c3f7811ea1e7c2661db534572fafe4026d8dc
@@ -38,30 +26,95 @@ npx hardhat run scripts/deploy.js
   Gas used:            136837 of 136837
   Block #6:            0xc510d1305fe8058454fe580360891fedd410deab1a4f9fa81ceba8e9896f0c80
 
-#eth_chainId
-#eth_getTransactionByHash
-
 ########### Message:
 Engine contract deployed to: 0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9
 Game contract deployed to: 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707
 ########### Contracts deployed successfully!
 
-```shell
-npx hardhat test
-REPORT_GAS=true npx hardhat test
+### 1. Challenge 1 - Test and Deploy (gitcloned to the VS code)
+***The link to the gitcloned and extended with tests using chai package: https://github.com/aizhan-zhak/Hardhat-Gambling.git***
+
+Terminal commands:
+```shell 
+npx hardhat run scripts/deploy.js --network localhost
 ```
-  0 passing (1ms)
-  ·-----------------------|---------------------------|-------------|-----------------------------·
-|  Solc version: 0.7.0  ·  Optimizer enabled: true  ·  Runs: 200  ·  Block limit: 30000000 gas  │
-························|···························|·············|······························
-|  Methods                                                                                      │
-·············|··········|·············|·············|·············|·············|················
-|  Contract  ·  Method  ·  Min        ·  Max        ·  Avg        ·  # calls    ·  usd (avg)    │
-·------------|----------|-------------|-------------|-------------|-------------|---------------·
 
-  0 passing (10ms)
+Downloading compiler 0.8.17
+Compiled 2 Solidity files successfully
+Contract Deployed at 0x0165878A594ca255338adfa4d48449f69242Eb8F
+
+```shell 
+MacBook-Air-Aizhan:Hardhat-Gambling aizhana$ npx hardhat test
+```
+
+  Engine
+    bitwiseAnd
+      ✔ should return 0 when both inputs are 0
+      ✔ should return the bitwise AND of two numbers
+
+  Game contract
+    ✔ should return true if the user guess is correct
+    ✔ should return false if the user guess is incorrect
 
 
+  4 passing (3s)
+
+```shell 
+(base) MacBook-Air-Aizhan:Hardhat-Gambling aizhana$ git commit -m "Add new test files and compilation report, update package-lock and package.json. This commit adds new test files for the game, engine and the game contract, along with a report on the Solidity compilation process. The package-lock and package.json files were also updated to reflect these changes"
+```
+
+[main 2d26144] Add new test files and compilation report, update package-lock and package.json. This commit adds new test files for the game, engine and the game contract, along with a report on the Solidity compilation process. The package-lock and package.json files were also updated to reflect these changes
+ 6 files changed, 153 insertions(+), 390 deletions(-)
+ create mode 100644 test/compilation.md
+ create mode 100644 test/test_engine.test.js
+ create mode 100644 test/test_game.test.js
+
+```shell 
+(base) MacBook-Air-Aizhan:Hardhat-Gambling aizhana$ git push
+warning: redirecting to https://github.com/aizhan-zhak/Hardhat-Gambling/
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 5.26 KiB | 449.00 KiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To http://github.com/aizhan-zhak/Hardhat-Gambling
+   61ed3d2..2d26144  main -> main
+```
+
+### 2. Challenge 2 - Celo Alfajores Deployment
+```shell 
+npm install dotenv
+npx hardhat run scripts/deploy.js --network alfajores
+```
+
+Contract Deployed at 0xe6317492C8a532992019394FE3C827C564169Fe5
+
+```shell 
+git add .
+git commit -m "Deploying contracts using alfajores network"
+```
+
+[main 757d66a] Deploying contracts using alfajores network
+ 5 files changed, 65 insertions(+), 2 deletions(-)
+```shell 
+git push
+```
+warning: redirecting to https://github.com/aizhan-zhak/Hardhat-Gambling/
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 2.01 KiB | 2.01 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To http://github.com/aizhan-zhak/Hardhat-Gambling
+   2d26144..757d66a  main -> main
+
+**The link to the gitcloned and extended with tests using chai package: https://github.com/aizhan-zhak/Hardhat-Gambling.git**
+
+# II. Impact Market DAO proposal
 
 ## Title: Creating a PACT Reward System to Encourage Donations
 
