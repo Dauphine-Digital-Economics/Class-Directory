@@ -194,14 +194,14 @@ It is possible to evaluate the efficiency of the transaction in terms of gas usa
   
 # II. Impact Market DAO proposal
   
- ### Title: PACT Donation Matching Program and PACT Reward System to Encourage Donations
-
+ ## Title: PACT Donation Matching Program and PACT Reward System to Encourage Donations
+### Short description
 **Overview:**
 impactMarket is a platform that enables individuals and communities to contribute to social impact projects around the world. PACT is impactMarket's native token that is used to reward donors, support UBI communities, and incentivize investors. While impactMarket has seen tremendous growth and success, there is still an opportunity to increase the utility and value of the PACT token. This proposal focuses on incentivizing donors to increase their donations and use their PACT tokens in a way that benefits impactMarket and the communities it serves.
 
 **Short description of the proposal:** This proposal aims to incentivize PACT donors to increase their donations by introducing ***(1) a donation matching program***. The program will match a portion of the donation made by the donor with PACT tokens, providing them with an opportunity to earn more PACT while supporting impactMarket's mission. At the same time, this proposal seeks to establish ***(2) a reward system for PACT token holders*** who donate to impactMarket, also encouraging increased donations and interaction with the DAO. By providing rewards and benefits to donors, we can create a sustainable and impactful community that supports impactMarket's mission.
 
-### The scope.
+### The scope - long description.
   
 #### Background:
 impactMarket is a Web3 platform dedicated to creating economic opportunities for underprivileged communities through the use of DeFi. The platform's goal is to leverage blockchain technology to provide access to financial services that would otherwise be unavailable to people living in poverty. 
@@ -252,6 +252,7 @@ In addition, it is also possible to track the token velocity, which refers to th
 **The proposed reward system**, which includes donations, participation, top leaders in the leaderboard, referrals, PACT token burn, and UBI community engagement, can also have significant financial implications. It will require an initial investment to set up, but with the expectatoin that the increased donations and participation will offset these costs over time. Then there would be a need to allocate a portion of impactMarket's budget to fund the rewards program, but I believe that the benefits of increased engagement and participation will far outweigh the costs. By providing incentives for donations and engagement, more funds can be raised for social impact projects and UBI communities, which can lead to more economic opportunities and financial inclusion. 
   
   In addition, by tracking the impact of each donor's contributions and creating a sense of competition among donors, there could be a positive effect on the platform's growth and popularity. If more people are aware of impactMarket and its mission, it could lead to more investors and donors joining the platform, resulting in a significant increase in the demand for PACT tokens. The proposed PACT token burn mechanism can also have a positive impact on the platform's finances. By allowing donors to contribute their PACT tokens directly to social impact projects, it could create a sense of ownership and engagement that encourages them to contribute more. The burning of PACT tokens could reduce the circulating supply, creating scarcity, and potentially driving up the price of the token.
- 
+
+ #### Concluding remarks
 
 **Overall,** present proposal to introduce a donation matching program and reward system for PACT token holders is a step towards creating a sustainable and impactful community that supports impactMarket's mission. This proposal aims to incentivize PACT donors to increase their donations and use their PACT tokens in a way that benefits both impactMarket and the communities it serves. For impactMarket, the program will increase the funding available to support its initiatives, while also creating a sense of community and engagement among its members. For PACT donors, the program provides an opportunity to earn more PACT while supporting a cause they believe in. The mechanisms related to the donation matching program and reward system will provide clear incentives and benefits that encourage donors to increase their contributions and create a sense of connection with UBI communities. The reward system will incentivize donors to contribute more funds to impactMarket, encourage active participation in the DAO, and increase the platform's reach through referrals. By establishing a formal reward system for PACT token holders, impactMarket can increase engagement with its community and further its mission to provide economic opportunities to underprivileged communities through DeFi. I believe this proposal provides a unique and impactful way for individuals and communities to contribute to social impact projects around the world.
