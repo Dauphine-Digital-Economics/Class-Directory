@@ -4,9 +4,9 @@
 
 ***You will find out the full project on the <u> separate branch Homework_4 <u> within the forked Dauphine-Digital-Economics.***
   
-Note: I could manage to push it only to the separate branch, which I named the same as the current folder (Homework_4/Hardhat_without_gitclone_deployment)
-  
 https://github.com/aizhan-zhak/Dauphine-Digital-Economics/tree/Homework_4/Hardhat_without_gitclone_deployment
+Comment: I could manage to push it only to the separate branch, which I named the same as the current folder 
+  
   
 #### Installation using VS code terminal
 ```shell
