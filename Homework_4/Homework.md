@@ -8,7 +8,7 @@ https://github.com/aizhan-zhak/Dauphine-Digital-Economics/tree/Homework_4/Hardha
   
 **Comment:** I could manage to push it only to the separate branch, which I named the same as the current folder 
   
-  
+
 #### Installation using VS code terminal
 ```shell
 cd /Users/aizhana/Desktop/npm
@@ -54,8 +54,10 @@ Game contract deployed to: 0x5FC8d32690cc91D4c39d9d3abcBD16989F875707
 
 ### 1. Challenge 1 - Test and Deploy (gitcloned to the VS code)
 ***The link to the gitcloned and extended with tests using chai package: https://github.com/aizhan-zhak/Hardhat-Gambling.git***
-
-Terminal commands:
+  
+**Comment:** Since I have the same contracts as in the Hardhat-Gambling example, I decided to work directly on tests. The one difference that I noticed was the version of pragma, which I  set it identical in the configuration for the previous deployment, where I was trying to deploy it myself from scratch. Here, I decided to keep it same since it would have just required me to change the version in the hardhat.config.js.
+  
+**Terminal commands:**
 ```shell 
 npx hardhat run scripts/deploy.js --network localhost
 ```
@@ -113,17 +115,16 @@ To http://github.com/aizhan-zhak/Hardhat-Gambling
 ```shell 
 npm install dotenv
 npx hardhat run scripts/deploy.js --network alfajores
-```
-
+```  
 Contract Deployed at 0xe6317492C8a532992019394FE3C827C564169Fe5
 
 ```shell 
 git add .
 git commit -m "Deploying contracts using alfajores network"
-```
 
 [main 757d66a] Deploying contracts using alfajores network
  5 files changed, 65 insertions(+), 2 deletions(-)
+```
 ```shell 
 git push
 
@@ -138,8 +139,9 @@ remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
 To http://github.com/aizhan-zhak/Hardhat-Gambling
    2d26144..757d66a  main -> main
 ```
+The .env file is ignored as expected.
 
-**The link to the gitcloned and extended with tests using chai package: https://github.com/aizhan-zhak/Hardhat-Gambling.git**
+**The link to the alfajores deployment is here: https://github.com/aizhan-zhak/Hardhat-Gambling.git**
 
 # II. Impact Market DAO proposal
 
