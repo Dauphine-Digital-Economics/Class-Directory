@@ -5,11 +5,22 @@
 ***You will find out the full project on the <u> separate branch Homework_4 <u> within the forked Dauphine-Digital-Economics.***
 Note: I could manage to push it only to the separate branch, which I named the same as the current folder (Homework_4/Hardhat_without_gitclone_deployment)
 
+  
+#### Installation using VS code terminal
+```shell
+cd /Users/aizhana/Desktop/npm
+node -v
+npm -v
+npm install --save-dev hardhat
+npx hardhat
+```
+
 ```shell
 npx hardhat node
-npx hardhat run scripts/deploy.js
+npx hardhat run scripts/deploy.js --network localhost
 ```
 ```
+# Compiled 2 Solidity files successfully 
   Contract deployment: Engine
   Contract address:    0xdc64a140aa3e981100a9beca4e685f962f0cf6c9
   Transaction:         0x7f43e5f81aa79bb41001896c6415f9783e158ffd13586c1a66b9a5a118fee2c9
@@ -45,27 +56,31 @@ Terminal commands:
 ```shell 
 npx hardhat run scripts/deploy.js --network localhost
 ```
-
+```
 Downloading compiler 0.8.17
 Compiled 2 Solidity files successfully
 Contract Deployed at 0x0165878A594ca255338adfa4d48449f69242Eb8F
+```
+
 
 ```shell 
 MacBook-Air-Aizhan:Hardhat-Gambling aizhana$ npx hardhat test
 ```
-
+```
   Engine
     bitwiseAnd
       ✔ should return 0 when both inputs are 0
       ✔ should return the bitwise AND of two numbers
-
+```
+```
   Game contract
     ✔ should return true if the user guess is correct
     ✔ should return false if the user guess is incorrect
-
-
   4 passing (3s)
-
+```
+  
+****Committing and pushing to the forked Hardhat-Gambling:****
+  
 ```shell 
 (base) MacBook-Air-Aizhan:Hardhat-Gambling aizhana$ git commit -m "Add new test files and compilation report, update package-lock and package.json. This commit adds new test files for the game, engine and the game contract, along with a report on the Solidity compilation process. The package-lock and package.json files were also updated to reflect these changes"
 
