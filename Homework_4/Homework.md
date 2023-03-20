@@ -171,8 +171,10 @@ Gas used: 236582
 Gas price: 25000000000
 Transaction cost: 0.00591455 CELO
 ```
+
 External validity of the transaction attributes can be found here 
   https://explorer.bitquery.io/celo_alfajores/tx/0x75f8a6f7e78b1d35c975bedeb014b8529d443d777a8a08ae346f3288298870dc
+ ```
 _**Transaction Attributes**_
 Attribute	Value
 Block	16787230
