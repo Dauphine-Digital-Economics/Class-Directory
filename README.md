@@ -1,5 +1,6 @@
 ### Hi there 👋
 
+I am from normandy, looking to explore datascience and economics
 <!--
 **Dauphine-Digital-Economics/Dauphine-Digital-Economics** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 

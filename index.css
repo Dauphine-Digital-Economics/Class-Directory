@@ -111,7 +111,9 @@ p {
   background-color: transparent;
   width: 350px;
   height: 350px;
+  background-image: url(img/NotMee.png);
 }
+
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
@@ -125,6 +127,7 @@ p {
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
+  
 }
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -136,6 +139,7 @@ p {
 
 .flip-card-front {
   background-color: white;
+  range: url(img/NotMee.png);
 }
 
 
