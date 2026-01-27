@@ -18,4 +18,9 @@ window.onload = function(){
 	function HexToWei(hexBalance){
 		return parseInt(hexBalance, 16);
 	}
+
+}
+
+function Open_website(website){
+		window.open(website,"_blank")
 }
