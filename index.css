@@ -160,3 +160,13 @@ p {
 	font-size: 18px;
 	cursor: pointer;
 }
+
+#WebsiteBtn {
+	background-color: olivedrab;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 18px;
+	cursor: pointer;
+}
